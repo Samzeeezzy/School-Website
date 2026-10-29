@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#142b5f">
+  <title>Smart Amazing School Pulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">SA</div>
+        <div><strong>Smart Amazing</strong><span>School Pulse</span></div>
+      </div>
+      <div class="role-switch">
+        <label for="roleSelect">Preview dashboard</label>
+        <select id="roleSelect">
+          <option value="founder">Founder</option>
+          <option value="admin">Admin</option>
+          <option value="teacher">Teacher</option>
+          <option value="parent">Parent</option>
+        </select>
+      </div>
+      <nav id="navigation" aria-label="Main navigation"></nav>
+      <div class="sidebar-footer">
+        <div class="avatar" id="userAvatar">SA</div>
+        <div><strong id="userName">School Founder</strong><span id="userRole">Founder account</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumb"><span>School Portal</span><b>/</b><strong id="pageCrumb">Overview</strong></div>
+        <div class="topbar-right"><span class="status-dot"></span><span>Demo mode</span><button class="outline-button" id="resetDemo">Reset demo data</button></div>
+      </header>
+      <section class="page-content">
+        <div id="page"></div>
+        <footer>Smart Amazing School Pulse <span>•</span> Frontend demonstration</footer>
+      </section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
